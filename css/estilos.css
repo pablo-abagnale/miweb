@@ -1,0 +1,239 @@
+/*index*/
+#index{
+   background-image: url(../images/fondo.gif);
+   background-size: cover;
+}
+#index h1 {
+   color: white;
+   font-size: 60px;
+}
+#index h3 {
+   color: white;
+   font-size: 30px;
+}
+#index p {
+   color: white;
+   font-size: 18px;
+}
+#index button {
+   color: #333;
+   font-size: 20px;
+   background-color: white;
+   border: none;
+   border-radius: 25px;
+   padding: 10px;
+   width: 250px;
+}
+#index button:hover{
+   background-color: #333;
+   color: white;
+   font-size: 18px;
+}
+#index header a{
+   color: white;
+   font-size: 24px;
+   margin:10px ;
+   text-align: center;
+   width: 170px;
+}
+#index header a:hover{
+   background-color: #333;
+   border-radius: 20px;
+   padding: 7px;
+   width: 170px;
+   text-align: center;
+   font-size: 18px;
+}
+/*index footer*/
+#index footer i{
+   color: white;
+   font-size: 40px;
+   margin: 10px;
+}
+#index footer i:hover{
+   color: #333;
+   background-color: white;
+   font-size: 30px ;
+   padding: 7px;
+   border-radius: 100px;
+}
+#index footer a{
+   text-decoration: none;
+}
+.mail{
+   color: white;
+   font-size: 20px;
+   text-align: center;
+   text-decoration: none;
+}
+/*Sobre mi*/
+#sobre-mi header a{
+   color: white;
+   font-size: 24px;
+   margin:10px ;
+   text-align: center;
+   width: 170px;
+}
+#sobre-mi header a:hover{
+   background-color: #333;
+   border-radius: 20px;
+   padding: 7px;
+   width: 170px;
+   text-align: center;
+   font-size: 18px;
+}
+#sobre-mi .parte1{
+   background-image: url(../images/fondo.gif);
+   background-size: cover;
+}
+#sobre-mi h1{
+   color: white;
+   font-size: 60px;
+}
+#sobre-mi p {
+   color: white;
+   font-size: 18px;
+}
+.foto-perfil{
+   height: 300px !important;
+   width: 300px !important;
+   border-radius: 200px ;
+   background-color: #333;
+   padding: 10px;
+   border: rgb(233, 173, 10) solid 2px;
+}
+#sobre-mi .parte2{
+   background-color: rgb(220, 235, 152);
+}
+#sobre-mi .parte3{
+   background-color: #333;
+}
+#sobre-mi footer i{
+   color: white;
+   font-size: 40px;
+   margin: 10px;
+}
+#sobre-mi footer i:hover{
+   color: #333;
+   background-color:white;
+   font-size: 30px ;
+   padding: 7px;
+   border-radius: 100px;
+}
+#sobre-mi footer a{
+   text-decoration: none;
+}
+#sobre-mi .mail{
+   color: white;
+   font-size: 20px;
+   text-align: center;
+   text-decoration: none;
+}
+#sobre-mi i {
+   color: #333;
+   font-size: 80px;
+}
+#sobre-mi h6{
+   font-size: 18px;
+   font-weight: bold;
+   color: #333;
+}
+.card{
+   border-radius: 20px !important
+}
+.con i{
+   color: white !important; 
+   background-color: #333;
+   padding: 10px;
+   font-size: 80px !important;
+   border-radius: 10px;
+   margin: 5px 1px 5px 1px
+}
+#contxt {
+   margin: 10px;
+   color: #333 !important;
+   font-size: 14px !important;
+}
+/*sobre mi estudios*/
+#edu{
+   color: #333 !important;
+   font-size: 5px !important;
+}
+#sobre-mi .parte4{
+   background-color: rgb(224, 204, 89);
+}
+#sobre-mi .parte5{
+   background-color: rgb(71, 48, 73);
+}
+#sobre-mi footer{
+   background-image: url(../images/fondo.gif);
+   background-size: cover;
+}
+#sobre-mi h2{
+   color: rgb(71, 48, 73);
+}
+.parte5 h2 {
+   color:  rgb(224, 204, 89) !important;
+}
+#sobre-mi img {
+   background-color: #333;
+   border-radius: 400px;
+   border:  rgb(224, 204, 89) solid 2px;
+   padding: 5px;
+   margin: 10px;
+   height: 100px;
+   width: 100px;
+}
+.bt-pdf{
+   color: #333;
+   font-size: 18px;
+   background-color: white;
+   border: none;
+   border-radius: 25px;
+   padding: 7px;
+   width: 200px;
+}
+.bt-pdf:hover{
+   background-color: #333;
+   color: white;
+   font-size: 14px;
+}
+/*contacto*/
+#cont{
+ background-image: url(../images/fondo.gif);
+ background-size: cover;
+}
+#cont header a{
+   color: white;
+   font-size: 24px;
+   margin:10px ;
+   text-align: center;
+   width: 170px;
+}
+#cont header a:hover{
+   background-color: #333;
+   border-radius: 20px;
+   padding: 7px;
+   width: 170px;
+   text-align: center;
+   font-size: 18px;
+}
+#fondo-cont{
+   color:white ;
+   background-color: #333;
+}
+#cont footer i{
+   color: white;
+   font-size: 40px;
+   margin: 10px;
+}
+#cont footer i:hover{
+   color: #333;
+   background-color: white;
+   font-size: 30px ;
+   padding: 7px;
+   border-radius: 100px;
+}
+#cont footer a{
+   text-decoration: none;
+}
