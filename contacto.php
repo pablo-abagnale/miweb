@@ -1,45 +1,71 @@
 <?php 
+$pagina = "cont";
+include_once ("header.php");
+include_once ("PHPMailer/src/PHPMailer.php");
+include_once ("PHPMailer/src/SMTP.php");
+if($_POST){ /* es postback */
+
+  function guardarCorreo($correo){
+    $archivo =fopen("mails.txt","a+");
+    fwrite($archivo,$correo.";\n");
+    fclose($archivo);
+  }
+  
+  header("Location: confirmacion-envio.php");
+
+  $nombre = $_POST["txtNombre"];
+  $correo = $_POST ["txtEmail"];
+  $mensaje = $_POST["txtMensaje"];
+  
+  if($nombre != "" && $correo != ""){
+
+    guardarCorreo($correo);
+    
+      $mail = new PHPMailer();
+      $mail->IsSMTP();
+      $mail->SMTPAuth = true;
+      $mail->Host = "mail.dominio.com"; // SMTP a utilizar
+      $mail->Username = "info@dominio.com.ar"; // Correo completo a utilizar
+      $mail->Password = "aqui va la clave de tu correo";
+      $mail->Port = 25;
+      $mail->From = "info@dominio.com.ar"; //Desde la cuenta donde enviamos
+      $mail->FromName = "Tu nombre a mostrar";
+      $mail->IsHTML(true);
+      $mail->SMTPOptions = array(
+                  'ssl' => array(
+                      'verify_peer' => false,
+                      'verify_peer_name' => false,
+                      'allow_self_signed' => true
+                  )
+              );
+
+      //Destinatarios
+      $mail->addAddress($correo);
+      $mail->addBCC("otrocorreo@gmail.com"); //Copia oculta
+      $mail->Subject = utf8_decode("Contacto página Web");
+      $mail->Body = "Recibimos tu consulta, te responderemos a la brevedad.";
+      /*if(!$mail->Send()){
+        $msg = "Error al enviar el correo, intente nuevamente mas tarde.";
+     }*/
+      $mail->ClearAllRecipients(); //Borra los destinatarios
+
+      //Envía ahora un correo a nosotros con los datos de la persona
+      $mail->addAddress("info@dominio.com.ar");
+      $mail->Subject = utf8_decode("Recibiste un mensaje desde tu página Web");
+      $mail->Body = "Te escribio $nombre cuyo correo es $correo el siguiente mensaje:<br><br>$mensaje";
+     
+      //if($mail->Send()){ /* Si fue enviado correctamente redirecciona */
+          header("Location: confirmacion-envio.php");
+     // } else {
+      //    $msg = "Error al enviar el correo, intente nuevamente mas tarde.";
+     // }    
+  } else {
+      $msg = "Complete todos los campos";
+  } 
+
+}
+
 ?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/fontawesome/css/all.css">
-    <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">    
-</head><!--fin head-->
-<body id="cont">
-<header>
-<div class="container">
-    <nav class="navbar navbar-expand-md navbar-light  m-2">
-        <button class="navbar-toggler text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-5">
-            <li class="nav-item active">
-              <a class="nav-link px-5 active" aria-current="page" href="index.php">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-5 " href="sobre-mi.php">Sobre mi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-5 " href="proyectos.php">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-5 " href="contacto.php" aria-disabled="true">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header><!--fin header-->
 <main class="m-1 pt-1">
   <div id="fondo-cont" class="container-fluid">
     <div class="container">

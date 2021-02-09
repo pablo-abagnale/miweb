@@ -203,6 +203,10 @@
  background-image: url(../images/fondo.gif);
  background-size: cover;
 }
+#cont h1{
+   color: white;
+   font-size: 60px;
+}
 #cont header a{
    color: white;
    font-size: 24px;

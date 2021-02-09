@@ -1,21 +1,22 @@
 <?php
-$pagina = "index";
+$pagina = "cont";
 include_once ("header.php")
 ?>
 <main class="m-1 pt-1">
+  <div id="fondo-cont" class="container-fluid">
     <div class="container">
-        <div class="row "><div class="col-12"><h1>Hola! <br> Bienvenidos a mi web</h1></div></div>
-        <div class="row "><div class="col-12"><br></div></div>
-        <div class="row py-2 "><div class="col-12 mx-5"><h3>Yo soy Pablo Abagnale</h3></div></div>
+        <div class="row "><div class="col-12"><h1>Muchas gracias por tu contacto!!</h1></div></div>
         <div class="row "><div class="col-12"><br></div></div>
         <div class="row">
-            <div class="col-12 col-sm-8"><p>Te cuento la idea de hacer  este espacio es mostrar en un recorrido por los conocimientos que he ido adquiriendo de forma autodidacta de algunas herramientas como Visual Studio Code, HTML5, CSS3, Bootstrap, WordPress, PHP entre otras con el fin de algún día poder ser programador </p></div></div>
-        <div class="row "><div class="col-12"><br></div></div> 
-        <div class="row "><div class="col-12"><br></div></div> 
-        <div class="row ">
-        <div class="col-12 mx-5"><a href="sobre-mi.php"><button class="shadow">Conoce sobre mi</button></a></div></div> 
-        <div class="row "><div class="col-12"><br></div></div>   
-    </div> 
+        <div class="col-12 col-sm-6">
+          <p class="contacto-p">Tu contacto se envió correctamente, a la brevedad te voy a estar respondiendo.  </p>
+        </div>
+        <div class="col-12 col-sm-6">
+        <p class="contacto-p"><i class="fas fa-check-circle"></i></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </main><!--fin main-->
 <footer>
     <div class="container">
