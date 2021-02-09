@@ -31,10 +31,10 @@
               <a class="nav-link px-5 active " aria-current="page" href="sobre-mi.php">Sobre mi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-5 " href="#">Proyectos</a>
+              <a class="nav-link px-5 " href="proyectos.php">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-5 " href="https://pabloabagnale.wordpress.com/contact/" aria-disabled="true">contacto</a>
+              <a class="nav-link px-5 " href="https://pabloabagnale.wordpress.com/contact/" aria-disabled="true">Contacto</a>
             </li>
           </ul>
         </div>
@@ -141,7 +141,7 @@ Los avances tecnológicos han desarrollado nuevas necesidades laborales y de cap
                 <div class="col-12 col-sm-3 text-center"><a href="https://pabloabagnale.wordpress.com/" target="_blank"><i class="fab fa-wordpress"></i></a> <a href="https://www.linkedin.com/in/pablo-ezequiel-abagnale/" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="https://github.com/pablo-abagnale" target="_blank"><i class="fab fa-github"></i></a></div>
                 <div class="col-12 col-sm-3 text-center pt-3"><a href="https://pabloabagnale.wordpress.com/contact/" target="_blank"><p class="mail">pablo.e.abagnale@gmai.com</p></a></div>
                 <div class="col-12 col-sm-3"></div>
-                <div class="col-12 col-sm-3 text-center"><a href="https://api.whatsapp.com/send?phone=543512294734"><i class="fab fa-whatsapp"></i></a></div>
+                <div class="col-12 col-sm-3 text-center bt-wp"><a href="https://api.whatsapp.com/send?phone=543512294734"><i class="fab fa-whatsapp"></i></a></div>
             </div> 
         </div>   
 </footer><!--fin footer-->

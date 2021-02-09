@@ -30,10 +30,10 @@
               <a class="nav-link px-5 " href="sobre-mi.php">Sobre mi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-5 " href="#">Proyectos</a>
+              <a class="nav-link px-5 " href="proyectos.php">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-5 " href="contacto.php" aria-disabled="true">contacto</a>
+              <a class="nav-link px-5 " href="contacto.php" aria-disabled="true">Contacto</a>
             </li>
           </ul>
         </div>
@@ -47,8 +47,7 @@
         <div class="row "><div class="col-12"><br></div></div>
         <div class="row">
         <div class="col-12 col-sm-6">
-          <p class="contacto-p">Para más detalles sobre mi
-            trabajo podés ver mi Linkedin, descargar mi CV o mandarme un mensaje.</p>
+          <p class="contacto-p">Para propuestas puedes completar el formulario, contactarme a través de WhatsApp. También puedes ingresar a mis perfiles de linkedin, WordPress o Github. </p>
         </div>
         <div class="col-12 col-sm-6">
           <div id="formulario">
@@ -62,7 +61,7 @@
               <div class="mb-3">
                 <textarea name="txtMensaje" id="txtMensaje" cols="30" rows="10" placeholder=" Comentarios"
                   class="shadow"></textarea>
-                <div class="mt-3">
+                <div class="mt-3 bt-env">
                   <button type="submit" class="btn1 shadow">Enviar</button>
                 </div>
             </form>

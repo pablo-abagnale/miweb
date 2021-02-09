@@ -14,7 +14,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">    
 </head><!--fin head-->
-<body id="index">
+<body id="proyectos">
 <header>
 <div class="container">
     <nav class="navbar navbar-expand-md navbar-light  m-2">
@@ -30,7 +30,7 @@
               <a class="nav-link px-5 " href="sobre-mi.php">Sobre mi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-5 " href="proyectos.php">Proyectos</a>
+              <a class="nav-link px-5 " href="#">Proyectos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link px-5 " href="contacto.php" aria-disabled="true">Contacto</a>
@@ -40,20 +40,17 @@
       </div>
     </nav>
   </header><!--fin header-->
-<main class="m-1 pt-1">
-    <div class="container">
-        <div class="row "><div class="col-12"><h1>Hola! <br> Bienvenidos a mi web</h1></div></div>
-        <div class="row "><div class="col-12"><br></div></div>
-        <div class="row py-2 "><div class="col-12 mx-5"><h3>Yo soy Pablo Abagnale</h3></div></div>
-        <div class="row "><div class="col-12"><br></div></div>
-        <div class="row">
-            <div class="col-12 col-sm-8"><p>Te cuento la idea de hacer  este espacio es mostrar en un recorrido por los conocimientos que he ido adquiriendo de forma autodidacta de algunas herramientas como Visual Studio Code, HTML5, CSS3, Bootstrap, WordPress, PHP entre otras con el fin de algún día poder ser programador </p></div></div>
-        <div class="row "><div class="col-12"><br></div></div> 
-        <div class="row "><div class="col-12"><br></div></div> 
-        <div class="row ">
-        <div class="col-12 mx-5"><a href="sobre-mi.php"><button class="shadow">Conoce sobre mi</button></a></div></div> 
-        <div class="row "><div class="col-12"><br></div></div>   
-    </div> 
+<main >
+<div class="container">
+    <div class="row "><div class="col-12"><h1>Mis Proyectos</h1></div></div>
+</div>
+<div id="const" class="container-fluid">
+    <div class="row text-center">
+        <div class="col-12 col-sm-3 p-0"><img src="images/conos.svg" alt="" width="300px" ></div>
+        <div class="col-12 col-sm-6"><h2>Sitio en construcción</h2><p>La idea de este espacio es poder ir adjuntando futuros proyectos, porque no algúno tuyo, por el momento solo tengo varios ejercicios realizados que puedes checar en mi github <br><br><a href="https://github.com/pablo-abagnale" target="_blank"><i class="fab fa-github"></i></a></p></div>
+        <div class="col-12 col-sm-3 p-0"><img src="images/conos.svg" alt="" width="300px" ></div>
+    </div>
+</div>
 </main><!--fin main-->
 <footer>
     <div class="container">
